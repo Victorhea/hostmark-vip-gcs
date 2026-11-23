@@ -1,0 +1,46 @@
+# dependencies
+node_modules/
+# pnpm's content store, when it cannot use the global one
+.pnpm-store/
+
+# Vercel CLI project link
+.vercel/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# testing
+coverage/
+
+# env files (keep .env.example)
+.env
+.env.local
+.env.*.local
+
+# supabase local state
+supabase/.branches/
+supabase/.temp/
+
+# os / editor / tooling
+.DS_Store
+.claude/.cc-writes/
+**/.claude/.cc-writes/
+
+# design exports (large binaries; extracted source is committed)
+design/**/*.zip
+design/**/*.make
+
+# playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.auth/
+
+# local PGlite databases (pnpm local:setup, e2e)
+.pglite/
+
+# Evaluation output (regenerate with pnpm eval:intake)
+eval/results/
